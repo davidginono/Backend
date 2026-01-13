@@ -38,7 +38,7 @@ public class FurnitureItem {
     @Column(nullable = false, length = 255)
     private String fileName;
     
-    @Lob
+    
     @JdbcTypeCode(SqlTypes.BINARY)
     @Column(name = "image_data", nullable = false, columnDefinition = "bytea")
     private byte[] imageData;
